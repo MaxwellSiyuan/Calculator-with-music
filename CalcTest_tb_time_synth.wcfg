@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CalcTest_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="CalcTest_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="232465152584fs"></ZoomEndTime>
+      <Cursor1Time time="36064450000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="122"></NameColumnWidth>
+      <ValueColumnWidth column_width="54"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/CalcTest_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/SRCH" type="array">
+      <obj_property name="ElementShortName">SRCH[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SRCH[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/SRCL" type="array">
+      <obj_property name="ElementShortName">SRCL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SRCL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/DSTH" type="array">
+      <obj_property name="ElementShortName">DSTH[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DSTH[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/DSTL" type="array">
+      <obj_property name="ElementShortName">DSTL[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DSTL[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/ALU_OP" type="array">
+      <obj_property name="ElementShortName">ALU_OP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ALU_OP[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/finish" type="logic">
+      <obj_property name="ElementShortName">finish</obj_property>
+      <obj_property name="ObjectShortName">finish</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/OP_flag" type="logic">
+      <obj_property name="ElementShortName">OP_flag</obj_property>
+      <obj_property name="ObjectShortName">OP_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/num_flag" type="logic">
+      <obj_property name="ElementShortName">num_flag</obj_property>
+      <obj_property name="ObjectShortName">num_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/state" type="array">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/SRC" type="array">
+      <obj_property name="ElementShortName">SRC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SRC[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/DST" type="array">
+      <obj_property name="ElementShortName">DST[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DST[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/out_sign" type="logic">
+      <obj_property name="ElementShortName">out_sign</obj_property>
+      <obj_property name="ObjectShortName">out_sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/result" type="array">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/OP_changed" type="logic">
+      <obj_property name="ElementShortName">OP_changed</obj_property>
+      <obj_property name="ObjectShortName">OP_changed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/sign" type="logic">
+      <obj_property name="ElementShortName">sign</obj_property>
+      <obj_property name="ObjectShortName">sign</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/OP" type="array">
+      <obj_property name="ElementShortName">OP[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OP[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/data_H" type="array">
+      <obj_property name="ElementShortName">data_H[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_H[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CalcTest_tb/data_L" type="array">
+      <obj_property name="ElementShortName">data_L[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_L[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

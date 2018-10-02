@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Sep 12 00:28:25 2017
+# Process ID: 1976
+# Current directory: F:/VivadoProject/MusicCalc/MusicCalc.runs/synth_1
+# Command line: vivado.exe -log MusicCalc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MusicCalc.tcl
+# Log file: F:/VivadoProject/MusicCalc/MusicCalc.runs/synth_1/MusicCalc.vds
+# Journal file: F:/VivadoProject/MusicCalc/MusicCalc.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source MusicCalc.tcl -notrace

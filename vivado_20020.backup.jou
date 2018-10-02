@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Mon Jul 10 14:54:10 2017
+# Process ID: 20020
+# Current directory: F:/VivadoProject/MusicCalc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20420 F:\VivadoProject\MusicCalc\MusicCalc.xpr
+# Log file: F:/VivadoProject/MusicCalc/vivado.log
+# Journal file: F:/VivadoProject/MusicCalc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VivadoProject/MusicCalc/MusicCalc.xpr

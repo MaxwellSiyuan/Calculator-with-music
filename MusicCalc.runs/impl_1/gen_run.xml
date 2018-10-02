@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1505147300">
+  <File Type="PWROPT-DRC" Name="MusicCalc_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MusicCalc_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="MusicCalc_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="MusicCalc_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="MusicCalc.tcl"/>
+  <File Type="OPT-HWDEF" Name="MusicCalc.hwdef"/>
+  <File Type="RDI-RDI" Name="MusicCalc.vdi"/>
+  <File Type="OPT-DCP" Name="MusicCalc_opt.dcp"/>
+  <File Type="OPT-DRC" Name="MusicCalc_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="MusicCalc_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="MusicCalc_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="MusicCalc_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="MusicCalc_placed.dcp"/>
+  <File Type="PLACE-IO" Name="MusicCalc_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="MusicCalc_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="MusicCalc_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MusicCalc_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="MusicCalc_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MusicCalc_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MusicCalc_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="MusicCalc_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MusicCalc_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MusicCalc_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="MusicCalc_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="MusicCalc_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="MusicCalc_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MusicCalc_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="MusicCalc_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MusicCalc_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="MusicCalc_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="MusicCalc_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="MusicCalc.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="MusicCalc_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="MusicCalc.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MusicCalc_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="MusicCalc.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MusicCalc_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="MusicCalc.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MusicCalc_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="MusicCalc_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="MusicCalc_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="MusicCalc_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MusicCalc_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MusicCalc_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="MusicCalc_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MusicCalc_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="MusicCalc_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="MusicCalc_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MusicCalc_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MusicCalc_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MusicCalc_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MusicCalc_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MusicCalc_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="MusicCalc.bit"/>
+  <File Type="BITSTR-RBT" Name="MusicCalc.rbt"/>
+  <File Type="BITSTR-NKY" Name="MusicCalc.nky"/>
+  <File Type="BITSTR-BMM" Name="MusicCalc_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="MusicCalc.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="MusicCalc.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/PreKey.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NumSelect.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NumInput.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Key_Driver.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FlagPulse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NoteTrans.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicState.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicSheet.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicGen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicCnt.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/key_scan.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FreqDiv.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Hex2Dec.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CoreCircuit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Music.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Calc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MusicCalc.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CalcTest.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MusicCalc"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Key_test_PIN.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Key_test_PIN.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb

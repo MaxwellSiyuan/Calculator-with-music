@@ -1,0 +1,770 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sun Jul 09 14:42:12 2017
+# Process ID: 3536
+# Current directory: F:/VivadoProject/MusicCalc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8320 F:\VivadoProject\MusicCalc\MusicCalc.xpr
+# Log file: F:/VivadoProject/MusicCalc/vivado.log
+# Journal file: F:/VivadoProject/MusicCalc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/VivadoProject/MusicCalc/MusicCalc.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/install/Vivado/2016.4/data/ip'.
+set_property top CalcTest_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+add_files -norecurse F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v
+set_property top CalcTest [current_fileset]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v" into library work [F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v:1]
+[Sun Jul 09 14:47:51 2017] Launched synth_1...
+Run output will be captured here: F:/VivadoProject/MusicCalc/MusicCalc.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v" into library work [F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v:1]
+[Sun Jul 09 14:48:38 2017] Launched synth_1...
+Run output will be captured here: F:/VivadoProject/MusicCalc/MusicCalc.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk_100MHz'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk_100MHz'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VCC'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'VCC'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'music'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'music'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GND'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'GND'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MusicCol'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'MusicCol'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H1'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H2'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H3'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H4'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V1'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V2'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V3'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V4'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H1'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H2'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H3'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'H4'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V1'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V2'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V3'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V4'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V1'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V2'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V3'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'V4'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[7]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[6]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[5]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[4]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[3]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[2]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[1]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'data_out[0]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[0]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[1]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[2]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[3]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[0]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[1]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[2]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_sel[3]'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carry_flag'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_less'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_zero'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_less'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_zero'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'carry_flag'. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [F:/VivadoProject/MusicCalc/MusicCalc.srcs/constrs_1/new/Key_test_PIN.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1131.438 ; gain = 272.707
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1242.766 ; gain = 106.488
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'CalcTest_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj CalcTest_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/install/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a7562705bc5f4422808c0fe7c62cca33 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot CalcTest_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.CalcTest_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.ffsrce_fdce
+Compiling module simprims_ver.FDCE
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.CoreCircuit
+Compiling module xil_defaultlib.Hex2Dec
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.CalcTest
+Compiling module xil_defaultlib.CalcTest_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CalcTest_tb_time_synth
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 09 14:50:06 2017. For additional details about this file, please refer to the WebTalk help file at E:/Vivado/install/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 09 14:50:06 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1604.102 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CalcTest_tb_time_synth -key {Post-Synthesis:sim_1:Timing:CalcTest_tb} -tclbatch {CalcTest_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CalcTest_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CalcTest_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:52 ; elapsed = 00:00:40 . Memory (MB): peak = 1627.680 ; gain = 768.949
+run 200 us
+run 200 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1639.496 ; gain = 0.000
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'CalcTest_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj CalcTest_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/install/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a7562705bc5f4422808c0fe7c62cca33 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot CalcTest_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.CalcTest_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.ffsrce_fdce
+Compiling module simprims_ver.FDCE
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.CoreCircuit
+Compiling module xil_defaultlib.Hex2Dec
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.CalcTest
+Compiling module xil_defaultlib.CalcTest_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CalcTest_tb_time_synth
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 09 14:51:52 2017. For additional details about this file, please refer to the WebTalk help file at E:/Vivado/install/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 09 14:51:52 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1639.496 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CalcTest_tb_time_synth -key {Post-Synthesis:sim_1:Timing:CalcTest_tb} -tclbatch {CalcTest_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CalcTest_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CalcTest_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1639.496 ; gain = 0.000
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+run 200 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1658.750 ; gain = 0.000
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'CalcTest_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj CalcTest_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/install/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a7562705bc5f4422808c0fe7c62cca33 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot CalcTest_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.CalcTest_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.ffsrce_fdce
+Compiling module simprims_ver.FDCE
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.CoreCircuit
+Compiling module xil_defaultlib.Hex2Dec
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.CalcTest
+Compiling module xil_defaultlib.CalcTest_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CalcTest_tb_time_synth
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 09 15:01:10 2017. For additional details about this file, please refer to the WebTalk help file at E:/Vivado/install/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 09 15:01:10 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1658.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CalcTest_tb_time_synth -key {Post-Synthesis:sim_1:Timing:CalcTest_tb} -tclbatch {CalcTest_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CalcTest_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CalcTest_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1658.750 ; gain = 0.000
+run 2000 us
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'CalcTest_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav'
+"xvlog -m64 --relax -prj CalcTest_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/Hex2Dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CoreCircuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-2458] undeclared symbol carry_in, assumed default net type wire [F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v:72]
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v:82]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/install/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a7562705bc5f4422808c0fe7c62cca33 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot CalcTest_tb_behav xil_defaultlib.CalcTest_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.CoreCircuit
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Hex2Dec
+Compiling module xil_defaultlib.CalcTest
+Compiling module xil_defaultlib.CalcTest_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CalcTest_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav/xsim.dir/CalcTest_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav/xsim.dir/CalcTest_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 09 15:35:05 2017. For additional details about this file, please refer to the WebTalk help file at E:/Vivado/install/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 09 15:35:05 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1658.750 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CalcTest_tb_behav -key {Behavioral:sim_1:Functional:CalcTest_tb} -tclbatch {CalcTest_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CalcTest_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CalcTest_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1658.750 ; gain = 0.000
+run 2000 us
+current_sim simulation_3
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1659.465 ; gain = 0.000
+launch_simulation -mode post-synthesis -type timing
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/simulate.log
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'CalcTest_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj CalcTest_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/install/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a7562705bc5f4422808c0fe7c62cca33 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot CalcTest_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.CalcTest_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.ffsrce_fdce
+Compiling module simprims_ver.FDCE
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.CoreCircuit
+Compiling module xil_defaultlib.Hex2Dec
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.CalcTest
+Compiling module xil_defaultlib.CalcTest_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CalcTest_tb_time_synth
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 09 16:05:48 2017. For additional details about this file, please refer to the WebTalk help file at E:/Vivado/install/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 09 16:05:48 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1659.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CalcTest_tb_time_synth -key {Post-Synthesis:sim_1:Timing:CalcTest_tb} -tclbatch {CalcTest_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CalcTest_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CalcTest_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1659.465 ; gain = 0.000
+run 2000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type timing
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/simulate.log
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'CalcTest_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj CalcTest_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/CalcTest_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/install/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe -wto a7562705bc5f4422808c0fe7c62cca33 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot CalcTest_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.CalcTest_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "CalcTest_tb_time_synth.sdf", for root module "CalcTest_tb/CalcTest_file".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.ffsrce_fdce
+Compiling module simprims_ver.FDCE
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.CoreCircuit
+Compiling module xil_defaultlib.Hex2Dec
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.CalcTest
+Compiling module xil_defaultlib.CalcTest_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot CalcTest_tb_time_synth
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing/xsim.dir/CalcTest_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Jul 09 16:08:12 2017. For additional details about this file, please refer to the WebTalk help file at E:/Vivado/install/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Jul 09 16:08:12 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1661.098 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "CalcTest_tb_time_synth -key {Post-Synthesis:sim_1:Timing:CalcTest_tb} -tclbatch {CalcTest_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source CalcTest_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'CalcTest_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1661.098 ; gain = 0.000
+run 2000 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1661.098 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 09 16:57:58 2017...

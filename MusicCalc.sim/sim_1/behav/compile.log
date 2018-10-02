@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/Hex2Dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hex2Dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CoreCircuit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CoreCircuit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest
+INFO: [VRFC 10-2458] undeclared symbol carry_in, assumed default net type wire [F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v:72]
+INFO: [VRFC 10-2458] undeclared symbol zero, assumed default net type wire [F:/VivadoProject/MusicCalc/MusicCalc.srcs/sources_1/new/CalcTest.v:82]
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.srcs/sim_1/new/CalcTest_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CalcTest_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/VivadoProject/MusicCalc/MusicCalc.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
